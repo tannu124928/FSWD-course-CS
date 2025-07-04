@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Font Size</title>
+  <style>
+    body {
+      font-size: 18px; /* Default font size */
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Media query for screens 600px wide or smaller */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px; /* Smaller font size on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Font Size Example</h1>
+  <p>This paragraph’s font size will reduce on small screens (600px wide or less).</p>
+
+</body>
+</html>

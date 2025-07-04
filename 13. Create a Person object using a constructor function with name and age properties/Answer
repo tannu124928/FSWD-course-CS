@@ -1,0 +1,11 @@
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Example usage:
+const person1 = new Person("Alice", 30);
+console.log(person1.name); // Alice
+console.log(person1.age);  // 30
+
+--------------------------------------------------------------------------------------

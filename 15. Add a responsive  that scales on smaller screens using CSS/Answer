@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Image Example</title>
+  <style>
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Optional: container with max width and padding */
+    .container {
+      max-width: 600px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Responsive Image</h1>
+    <img class="responsive" src="https://via.placeholder.com/800x400" alt="Sample Image" />
+  </div>
+
+</body>
+</html>

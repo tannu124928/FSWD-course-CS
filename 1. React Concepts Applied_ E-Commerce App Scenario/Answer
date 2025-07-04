@@ -1,0 +1,95 @@
+Ans 1-
+// Parent Component
+<ProductCard name="Sneakers" price={49.99} />
+
+// ProductCard Component
+function ProductCard({ name, price }) {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>${price}</p>
+    </div>
+  );
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Ans 2-
+function ProductCard() {
+  const [liked, setLiked] = useState(false);
+
+  return (
+    <button onClick={() => setLiked(!liked)}>
+      {liked ? "Liked ❤️" : "Like 🤍"}
+    </button>
+  );
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Ans 3-
+function ProductSearch({ onSearch }) {
+  const [query, setQuery] = useState("");
+
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+    onSearch(e.target.value); // Optional: pass to parent
+  };
+
+  return (
+    <input
+      type="text"
+      value={query}
+      onChange={handleChange}
+      placeholder="Search products..."
+    />
+  );
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ans 4-
+Create a ThemeContext:
+
+const ThemeContext = React.createContext();
+
+
+2. function App() {
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <ProductPage />
+    </ThemeContext.Provider>
+  );
+}
+
+
+function ProductCard() {
+  const { theme } = useContext(ThemeContext);
+  return <div className={theme === "dark" ? "dark-card" : "light-card"}>...</div>;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Ans 5-
+Ans-: // ProtectedRoute.js
+import { Navigate } from "react-router-dom";
+
+function ProtectedRoute({ children, isAuthenticated }) {
+  return isAuthenticated ? children : <Navigate to="/login" />;
+}
+
+
+Use it in your routes:
+
+jsx
+Copy
+Edit
+<Routes>
+  <Route path="/checkout" element={
+    <ProtectedRoute isAuthenticated={userLoggedIn}>
+      <Checkout />
+    </ProtectedRoute>
+  } />
+</Routes>
+------------------------------------------------------------------------------------------------------------------------------------------------

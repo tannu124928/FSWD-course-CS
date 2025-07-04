@@ -1,0 +1,17 @@
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello() {
+    console.log(`Hello! My name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+// Example usage:
+const person1 = new Person("Alice", 30);
+person1.sayHello(); 
+// Output: Hello! My name is Alice and I am 30 years old.
+
+-----------------------------------------------------------------------------------------------------------

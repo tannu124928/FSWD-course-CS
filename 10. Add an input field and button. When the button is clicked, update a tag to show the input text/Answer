@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Display Input Text</title>
+</head>
+<body>
+
+  <input type="text" id="userInput" placeholder="Type something..." />
+  <button id="updateBtn">Update Text</button>
+
+  <p id="displayText">This text will change.</p>
+
+  <script>
+    document.getElementById("updateBtn").addEventListener("click", function() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("displayText").textContent = input;
+    });
+  </script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------

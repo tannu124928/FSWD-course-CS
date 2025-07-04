@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Traversal Example</title>
+</head>
+<body>
+
+  <div id="container">
+    <p id="para1">Paragraph 1</p>
+    <p id="para2">Paragraph 2</p>
+    <p id="para3">Paragraph 3</p>
+  </div>
+
+  <script>
+    const para2 = document.getElementById('para2');
+
+    // parentNode: get the parent of para2
+    console.log("parentNode of para2:", para2.parentNode);
+
+    // childNodes: get all child nodes of container
+    const container = document.getElementById('container');
+    console.log("childNodes of container:", container.childNodes);
+
+    // nextSibling: get the next sibling node of para2
+    console.log("nextSibling of para2:", para2.nextSibling);
+
+    // nextElementSibling: to get the next element (skip text nodes)
+    console.log("nextElementSibling of para2:", para2.nextElementSibling);
+  </script>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------

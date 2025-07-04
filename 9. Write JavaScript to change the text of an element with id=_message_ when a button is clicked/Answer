@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Message</title>
+</head>
+<body>
+
+  <p id="message">Original message</p>
+  <button onclick="changeMessage()">Click Me</button>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").textContent = "The message has been changed!";
+    }
+  </script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------

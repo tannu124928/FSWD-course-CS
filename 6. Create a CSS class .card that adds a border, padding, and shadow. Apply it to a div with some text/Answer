@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Example</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      max-width: 300px;
+      margin: 20px auto;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Card Title</h2>
+    <p>This is a simple card with a border, padding, and a shadow effect.</p>
+  </div>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
